@@ -1,0 +1,96 @@
+/*
+=imports
+========*/
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400|Montserrat:700");
+/*
+=variables
+==========*/
+/*
+=common
+=======*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.h1, .h2, .h3, .h4,
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-red {
+  color: #ED2224;
+}
+
+.bordered-div {
+  border-bottom: 3px solid #222;
+}
+
+/*
+=root
+=====*/
+#root {
+  background-color: #181A1E;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #AAA;
+  line-height: 1.5;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+/*
+=navbar
+=======*/
+.navbar-default {
+  background-color: #181A1E;
+  border-bottom: 3px solid #222;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand, .navbar-default .navbar-brand {
+  color: #AAA;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: #ED2224;
+  transition: all 0.3s ease-in-out;
+}
+
+/*
+=hero
+=====*/
+#hero {
+  min-height: 92vh;
+  text-align: center;
+  border-left: 3px solid #222;
+  border-right: 3px solid #222;
+  font-size: 1.3em;
+}
+
+#hero .tagLine {
+  text-transform: uppercase;
+  line-height: .9;
+  font-size: 4em;
+  letter-spacing: -4px;
+  color: #DDDDDD;
+}
+
+/*
+=intro
+======*/
+#intro {
+  min-height: 100vh;
+}
+
+#intro .aboutText {
+  text-align: center;
+}
