@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Elixeur | Synchronicity In-Sight</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/hover-min.css">
+  <link rel="stylesheet" href="css/imagehover.css">
   <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -15,7 +18,24 @@
   <div class="container-fluid">
     <div class="row" id="root">
 
-      <nav class="navbar navbar-default navbar-fixed-top">
+
+
+      <div class="bordered-div"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 flex" id="hero">
+            <h1 class="tagLine">
+              Any Business <br> Can Be Improved
+            </h1>
+            <p>But almost 90% businesses <em class="text-red">fail</em> to identify the <strong>method</strong> that ensures <strong>growth</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bordered-div"></div>
+
+      <nav class="navbar navbar-default">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -31,11 +51,11 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Method</a></li>
-              <li><a href="#">Stages</a></li>
+              <li><a href="#method">Method</a></li>
+              <li><a href="#stages">Stages</a></li>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
           <!-- /.navbar-collapse -->
@@ -43,34 +63,216 @@
         <!-- /.container-fluid -->
       </nav>
 
+      <div class="container">
+        <div class="row flex" id="intro">
+          <img src="img/elixeur-logo-white.svg" alt="Elixeur Logo White" class="elx-logo-white">
+          <h3 class="aboutText">An independent agency using LEAN methodology
+dedicated to business GROWTH.</h3>
+        </div>
+      </div>
+
+      <div class="bordered-div" id="method"></div>
+
+      <div class="fits-sec-header">
+        <h2>The METHOD that ensures growth for any business to be FIT</h2>
+      </div>
       <div class="bordered-div"></div>
 
       <div class="container">
-        <div class="row">
-          <div class="col-xs-12 flex" id="hero">
-            <h1 class="tagLine">
-              Any Business <br> Can Be Improved
-            </h1>
-            <p>But almost 90% businesses <em class="text-red">fail</em> to identify the <strong>method</strong> that ensures <strong>growth</strong>.</p>
+        <div class="row" id="fits">
+          <div class="col-sm-6 fits-building flex">
+            <img src="img/animated.svg" alt="" class="img-responsive">
+
+          </div>
+          <div class="col-sm-6 fits-description flex">
+            <div class="psf flex hvr-sweep-to-right">
+              <h2>Problem Solution Fit</h2>
+            </div>
+            <div class="pmf flex hvr-sweep-to-right">
+              <h2>Problem Solution Fit</h2>
+            </div>
+            <div class="bmf flex hvr-sweep-to-right">
+              <h2>Problem Solution Fit</h2>
+            </div>
           </div>
         </div>
       </div>
 
-    <div class="bordered-div"></div>
+      <div class="bordered-div" id="stages"></div>
 
-    <div class="container">
-      <div class="row flex" id="intro">
-        <h3 class="aboutText">An independent agency using LEAN methodology
-dedicated to business GROWTH.</h3>
+      <div class="fits-sec-header">
+        <h2>The STAGES we go through with you, for you</h2>
       </div>
-    </div>
+      <div class="bordered-div"></div>
+      <div class="container">
+        <div class="row" id="stages-s">
+          <div class="col-sm-6 stages-grp flex">
+            <div class="row search">
+              <div class="col-sm-6 flex customer-discovery">
+                <img src="img/customer-discovery.svg" alt="" class="img-responsive">
+                <P>Customer Discovery</P>
+              </div>
+              <div class="col-sm-6 flex customer-validation">
+                <img src="img/customer-validation.svg" alt="" class="img-responsive">
+                <P>Customer Validation</P>
+              </div>
+              <h3><span>Search</span></h3>
+            </div>
+          </div>
+          <div class="col-sm-6 stages-grp flex">
+            <div class="row search">
+              <div class="col-sm-6 flex customer-creation">
+                <img src="img/customer-creation.svg" alt="" class="img-responsive">
+                <P>Customer Creation</P>
+              </div>
+              <div class="col-sm-6 flex company-building">
+                <img src="img/company-building.svg" alt="" class="img-responsive">
+                <P>Company Building </P>
+              </div>
+              <h3><span>Execute</span></h3>
+            </div>
+          </div>
+          <p id="stg-des"></p>
+        </div>
+      </div>
+
+      <div class="bordered-div"></div>
+
+      <div class="fits-sec-header">
+        <h2>F. A. Q</h2>
+      </div>
+      <div class="bordered-div"></div>
+
+      <div class="container">
+        <div class="row" id="faq">
+
+          <div class="col-sm-6 qsn-container">
+            <div class="flipper">
+              <figure class="qsn-front border-bottom imghvr-push-down flex">
+                <h2>Is your method applicable in Bangladesh?</h2>
+                <figcaption class="qsn-back flex">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-sm-6 qsn-container">
+            <div class="flipper">
+              <figure class="qsn-front border-bottom qsn-front-e imghvr-push-down flex">
+                <h2>Is your method applicable in Bangladesh?</h2>
+                <figcaption class="qsn-back flex">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-sm-6 qsn-container">
+            <div class="flipper">
+              <figure class="qsn-front border-bottom imghvr-push-down flex">
+                <h2>Is your method applicable in Bangladesh?</h2>
+                <figcaption class="qsn-back flex">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-sm-6 qsn-container">
+            <div class="flipper">
+              <figure class="qsn-front border-bottom qsn-front-e imghvr-push-down flex">
+                <h2>Is your method applicable in Bangladesh?</h2>
+                <figcaption class="qsn-back flex">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-sm-6 qsn-container">
+            <div class="flipper">
+              <figure class="qsn-front imghvr-push-down flex">
+                <h2>Is your method applicable in Bangladesh?</h2>
+                <figcaption class="qsn-back flex">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-sm-6 qsn-container">
+            <div class="flipper">
+              <figure class="qsn-front qsn-front-e imghvr-push-down flex">
+                <h2>Is your method applicable in Bangladesh?</h2>
+                <figcaption class="qsn-back flex">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="bordered-div"></div>
+
+
+      <div class="container">
+        <div class="row flex" id="contact">
+
+
+
+          <div class="col-xs-12">
+            <div class="row">
+              <h2 class="cta">Want to check your business's health? Let's have a <span>free meeting.</span></h2>
+              <div class="col-xs-12">
+                <div class="row">
+                  <h2 class="social-media-title"><span>Social</span></h2>
+                </div>
+              </div>
+              <div class="col-xs-12 social-media">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <a href="" class="hvr-sweep-to-right"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="col-xs-3">
+                    <a href="" class="hvr-sweep-to-right"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="col-xs-3">
+                    <a href="" class="hvr-sweep-to-right"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="col-xs-3">
+                    <a href="" class="hvr-sweep-to-right"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bordered-div"></div>
+
+
+      <div class="map-container">
+        <div id="map">
+
+        </div>
+        <div class="copyright">
+          <img src="img/elx-tag.svg" alt="" class="tag">
+          <img src="img/crafted-seal-of-elixeur.svg" alt="" class="seal">
+        </div>
+      </div>
 
     </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" charset="utf-8"></script>
+
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmnTbHVhDMR0s8bvqFu8k4cR7FeBbttNk"></script>
+  <script src="js/map.js" charset="utf-8"></script>
   <script src="js/app.js" charset="utf-8"></script>
+
 </body>
 
 </html>

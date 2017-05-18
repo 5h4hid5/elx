@@ -1,22 +1,21 @@
 /*
 =imports
 ========*/
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400|Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400|Montserrat:200,500,700');
 
 /*
 =variables
 ==========*/
-$primaryColor: #181A1E;
-$borderColor: #282828;
+$primaryColor: #121212;
+$borderColor: #222;
 $hoverColor: #ED2224;
-$textColor: #E0E0E0;
-$headingColor: #E0E0E0;
+$textColor: #FFF;
 
 $primaryFont: 'Fira Sans', sans-serif;
 $headingFont: 'Montserrat', sans-serif;
 
 $primaryLineHeight: 1.5;
-$primaryBorder: 3px solid #353535;
+$primaryBorder: 3px solid #222;
 $primaryHoverTransition: all 0.3s ease-in-out;
 /*
 =common
@@ -36,7 +35,8 @@ $primaryHoverTransition: all 0.3s ease-in-out;
 
 .h1, .h2, .h3, .h4,
 h1, h2, h3, h4 {
-  font-family: $headingFont;
+  font-family: $primaryFont;
+  font-weight: 300;
 }
 
 .text-red {
@@ -45,15 +45,37 @@ h1, h2, h3, h4 {
 
 .bordered-div {
   border-bottom: $primaryBorder;
+  border-color: $borderColor;
 }
 
+.border-left {
+  border-left: $primaryBorder;
+}
+.border-right {
+  border-right: $primaryBorder;
+}
+.border-bottom {
+  border-bottom: $primaryBorder;
+}
+.border-top {
+  border-top: $primaryBorder;
+}
+
+.mp-right-zero {
+  margin-right: 0;
+  padding-right: 0;
+}
+.mp-left-zero {
+  margin-left: 0;
+  padding-left: 0;
+}
 /*
 =root
 =====*/
 #root {
   background-color: $primaryColor;
   font-family: $primaryFont;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   color: $textColor;
   line-height: $primaryLineHeight;
@@ -66,10 +88,14 @@ h1, h2, h3, h4 {
 =======*/
 .navbar-default {
   background-color: $primaryColor;
+  border: none;
   border-bottom: $primaryBorder;
+  border-color: $borderColor;
+  border-radius: 0;
 }
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand, .navbar-default .navbar-brand {
   color: $textColor;
+  font-size: 1.2em;
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
   color: $hoverColor;
@@ -81,7 +107,7 @@ h1, h2, h3, h4 {
 =hero
 =====*/
 #hero {
-  min-height: 92vh;
+  min-height: 95vh;
   text-align: center;
   border-left: $primaryBorder;
   border-right: $primaryBorder;
@@ -90,8 +116,9 @@ h1, h2, h3, h4 {
     text-transform: uppercase;
     line-height: .9;
     font-size: 4em;
-    letter-spacing: -4px;
-    color: $headingColor;
+    letter-spacing: -2px;
+    color: $textColor;
+    font-weight: 700;
   }
 }
 
@@ -100,7 +127,231 @@ h1, h2, h3, h4 {
 ======*/
 #intro {
   min-height: 100vh;
+  text-align: center;
+  .elx-logo-white {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
   .aboutText {
     text-align: center;
+    font-weight: 500;
   }
+}
+
+/*
+=fits
+=====*/
+.fits-sec-header {
+  padding: 3em 0;
+  text-align: center;
+  h2 {
+    font-weight: 700;
+  }
+}
+#fits {
+  .fits-building,
+  .fits-description {
+    height: 81vh;
+    border-right: $primaryBorder;
+  }
+  .fits-building {
+    border-left: $primaryBorder;
+  }
+  .fits-description {
+    padding: 0;
+  }
+  .fits-building {
+    img {
+      width: 100%;
+    }
+  }
+  .psf, .pmf, .bmf {
+    height: 27vh;
+    width: 100%;
+    text-align: center;
+  }
+  .psf:hover, .pmf:hover, .bmf:hover {
+    background: $textColor;
+    color: $borderColor;
+    transition: $primaryHoverTransition;
+  }
+  .psf, .pmf {
+    border-bottom: $primaryBorder;
+  }
+}
+
+/*
+=stages
+=======*/
+#stages-s {
+  padding: 200px 0;
+  .stages-grp {
+
+  }
+  .customer-discovery, .customer-validation, .customer-creation, .company-building {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .search {
+    h3 {
+      width: 100%;
+      text-align: center;
+      border-bottom: 3px solid #353535;
+      line-height: .1em;
+      margin: 10px 0 20px;
+      opacity: 0;
+      transition: $primaryHoverTransition;
+      span {
+        background: $primaryColor;
+        padding:0 10px;
+      }
+    }
+    &:hover {
+      h3 {
+        opacity: 1;
+      }
+    }
+  }
+  #stg-des {
+    height: 150px;
+  }
+}
+
+/*
+=faq
+====*/
+#faq {
+  padding: 0;
+  .qsn-container {
+    padding: 0;
+    height: 200px;
+    .qsn-front, .qsn-back {
+      height: 200px;
+      width: 100%;
+      text-align: center;
+      padding: 1em;
+    }
+    .qsn-front {
+      background: $primaryColor;
+      border-right: $primaryBorder;
+      border-left: $primaryBorder;
+    }
+    .qsn-front-e {
+      border-left: none;
+    }
+  }
+}
+
+/*
+=contact
+========*/
+#contact {
+  min-height: 70vh;
+  .cta {
+    text-align: center;
+    margin-bottom: 3em;
+    padding: 2em 0;
+    font-family: $primaryFont;
+    font-weight: 400;
+    color: $textColor;
+    border: $primaryBorder;
+    span {
+      background: $hoverColor;
+      padding: .3em;
+    }
+  }
+  .contact-form {
+    padding: 0;
+    input, textarea, .form-btn {
+      width: 100%;
+      border-radius: 0;
+      background: none;
+      outline: none;
+      border:none;
+      -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      box-shadow: none !important;
+      border: $primaryBorder;
+      outline: none;
+      height: none;
+      padding: 1.5em;
+      font-size: 1em;
+    }
+    textarea {
+      resize: none;
+    }
+    input:focus, textarea:focus {
+      background: $textColor;
+      color: $primaryColor;
+    }
+    .form-btn {
+      padding: .5em;
+    }
+  }
+  .social-media {
+    margin-top: 1em;
+    padding: 0;
+    a {
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      padding: 2em 0;
+      border: $primaryBorder;
+    }
+  }
+  .social-media-title {
+    width: 100%;
+    text-align: center;
+    border-bottom: $primaryBorder;
+    line-height: .1em;
+    margin: 10px 0 20px;
+    span {
+      background:$primaryColor;
+      padding:0 10px;
+    }
+  }
+  .social-media a {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 1em 0;
+    border: $primaryBorder;
+    color: #E0E0E0;
+    font-size: 1.5em;
+    &:hover .fa-facebook {
+      color: #46629E;
+    }
+    &:hover .fa-twitter {
+      color: #1DA1F2;
+    }
+    &:hover .fa-linkedin {
+      color: #0077B5;
+    }
+    &:hover .fa-medium {
+      color: #02B875;
+    }
+  }
+}
+
+/*
+=map
+====*/
+.map-container {
+  position: relative;
+  .tag, .seal {
+    position: absolute;
+    bottom: 50px;
+    width: 300px;
+  }
+  .tag {
+    left: 100px;
+    bottom: 100px;
+  }
+  .seal {
+    right: 100px;
+  }
+}
+#map {
+  min-height: 70vh;
 }

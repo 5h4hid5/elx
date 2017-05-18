@@ -1,0 +1,307 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 674 881.9" style="">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #f8f8f9;
+        stroke-miterlimit: 10;
+        stroke-width: 4.47px;
+      }
+    </style>
+  </defs>
+  <title>Artboard 1</title>
+  <!-- <g id="ladder1">
+    <path class="cls-1 FAhwosdi_0" d="M370.45,674.15L294.19,807.55"></path>
+    <path class="cls-1 FAhwosdi_1" d="M407.83,684.8L333.43,822.69"></path>
+    <path class="cls-1 FAhwosdi_2" d="M308.45,782.32L348.71,794.36"></path>
+    <path class="cls-1 FAhwosdi_3" d="M328.58,746.68L368.68,757.36"></path>
+    <path class="cls-1 FAhwosdi_4" d="M345.96,715.91L386.02,725.23"></path>
+    <path class="cls-1 FAhwosdi_5" d="M361.47,689.85L400.97,697.52"></path>
+  </g> -->
+  <g id="psf">
+    <path class="cls-1 FAhwosdi_6" d="M304.22,653.87L425.45,615.43L548.71,653.86L548.71,746.61L427.61,785.31L304.22,747.78L304.22,653.87Z"></path>
+    <path class="cls-1 FAhwosdi_7" d="M304.22,653.87L426.43,690.94L548.71,653.86"></path>
+    <path class="cls-1 FAhwosdi_8" d="M426.43,690.94L426.43,785.31"></path>
+    <path class="cls-1 FAhwosdi_9" d="M354.03000000000003,653.55A73.08,20.9 0,1,1 500.19,653.55A73.08,20.9 0,1,1 354.03000000000003,653.55"></path>
+    <path class="cls-1 FAhwosdi_10" d="M376.68,638.42L420.01,653.3L413.95,673.65"></path>
+    <path class="cls-1 FAhwosdi_11" d="M420.01,653.3L500.19,653.55"></path>
+  </g>
+  <!-- <g id="ladder2">
+    <path class="cls-1 FAhwosdi_12" d="M337.82,489.97L414.07,623.37"></path>
+    <path class="cls-1 FAhwosdi_13" d="M300.43,500.62L374.84,638.51"></path>
+    <path class="cls-1 FAhwosdi_14" d="M399.82,598.14L359.55,610.18"></path>
+    <path class="cls-1 FAhwosdi_15" d="M379.68,562.5L339.59,573.18"></path>
+    <path class="cls-1 FAhwosdi_16" d="M362.31,531.73L322.24,541.05"></path>
+    <path class="cls-1 FAhwosdi_17" d="M346.79,505.67L307.29,513.34"></path>
+  </g> -->
+  <g id="pmf">
+    <path class="cls-1 FAhwosdi_18" d="M426.46,615.38L426.46,463.45L243.47,405.58L58.87,461.98L58.87,709.92L243.57,766.16L304.22,737.9"></path>
+    <path class="cls-1 FAhwosdi_19" d="M426.46,463.45L243.46,517.96L58.87,461.98"></path>
+    <path class="cls-1 FAhwosdi_20" d="M243.46,517.96L243.46,766.16"></path>
+    <path class="cls-1 FAhwosdi_21" d="M82.24,461.98L243.46,413.15L405.01,463L243.46,509.66L82.24,461.98Z"></path>
+    <path class="cls-1 FAhwosdi_22" d="M82.24,461.98L247.66,454.48L334.25,483.43"></path>
+    <path class="cls-1 FAhwosdi_23" d="M247.66,454.48L243.46,413.15"></path>
+  </g>
+  <!-- <g id="ladder3">
+    <path class="cls-1 FAhwosdi_24" d="M332.12,190.6L255.7,438.18"></path>
+    <path class="cls-1 FAhwosdi_25" d="M368.68,201.81L295.5,451.78"></path>
+    <path class="cls-1 FAhwosdi_26" d="M267.27,400.69L307.84,409.62"></path>
+    <path class="cls-1 FAhwosdi_27" d="M278.63,363.9L319.06,371.29"></path>
+    <path class="cls-1 FAhwosdi_28" d="M290.08,326.8L330.18,333.3"></path>
+    <path class="cls-1 FAhwosdi_29" d="M301.03,291.32L340.47,298.16"></path>
+    <path class="cls-1 FAhwosdi_30" d="M312.97,252.64L352.37,257.53"></path>
+    <path class="cls-1 FAhwosdi_31" d="M324.26,216.05L363.11,220.82"></path>
+  </g> -->
+  <g id="bmf">
+    <path class="cls-1 FAhwosdi_32" d="M603.26,153.84L409.15,94.22"></path>
+    <path class="cls-1 FAhwosdi_33" d="M464.05,627.65L603.26,582.36L603.26,153.84"></path>
+    <path class="cls-1 FAhwosdi_34" d="M409.15,94.22L211.84,153.7L212.68,414.82"></path>
+    <path class="cls-1 FAhwosdi_35" d="M259.12,139.45L463.2,197.37"></path>
+    <path class="cls-1 FAhwosdi_36" d="M295.62,149.81L442.28,104.46"></path>
+    <path class="cls-1 FAhwosdi_37" d="M342.24,163.04L487.05,118.31"></path>
+    <path class="cls-1 FAhwosdi_38" d="M382.53,174.47L528.3,131.06"></path>
+    <path class="cls-1 FAhwosdi_39" d="M433.28,188.87L580.21,147.12"></path>
+    <path class="cls-1 FAhwosdi_40" d="M366.03,128.04L409.38,142.3"></path>
+    <path class="cls-1 FAhwosdi_41" d="M457.81,152.06L507,167.92"></path>
+    <path class="cls-1 FAhwosdi_42" d="M211.84,153.7L409.13,214.22L409.13,457.97"></path>
+    <path class="cls-1 FAhwosdi_43" d="M409.13,214.22L603.26,153.7"></path>
+  </g>
+  <style>
+    .FAhwosdi_0 {
+      stroke-dasharray: 154 156;
+      stroke-dashoffset: 155;
+      animation: FAhwosdi_draw 53ms linear 0 forwards;
+    }
+    .FAhwosdi_1 {
+      stroke-dasharray: 157 159;
+      stroke-dashoffset: 158;
+      animation: FAhwosdi_draw 54ms linear 53ms forwards;
+    }
+    .FAhwosdi_2 {
+      stroke-dasharray: 43 45;
+      stroke-dashoffset: 44;
+      animation: FAhwosdi_draw 15ms linear 107ms forwards;
+    }
+    .FAhwosdi_3 {
+      stroke-dasharray: 42 44;
+      stroke-dashoffset: 43;
+      animation: FAhwosdi_draw 14ms linear 122ms forwards;
+    }
+    .FAhwosdi_4 {
+      stroke-dasharray: 42 44;
+      stroke-dashoffset: 43;
+      animation: FAhwosdi_draw 14ms linear 136ms forwards;
+    }
+    .FAhwosdi_5 {
+      stroke-dasharray: 41 43;
+      stroke-dashoffset: 42;
+      animation: FAhwosdi_draw 14ms linear 151ms forwards;
+    }
+    .FAhwosdi_6 {
+      stroke-dasharray: 700 702;
+      stroke-dashoffset: 701;
+      animation: FAhwosdi_draw 239ms linear 166ms forwards;
+    }
+    .FAhwosdi_7 {
+      stroke-dasharray: 256 258;
+      stroke-dashoffset: 257;
+      animation: FAhwosdi_draw 87ms linear 405ms forwards;
+    }
+    .FAhwosdi_8 {
+      stroke-dasharray: 95 97;
+      stroke-dashoffset: 96;
+      animation: FAhwosdi_draw 32ms linear 493ms forwards;
+    }
+    .FAhwosdi_9 {
+      stroke-dasharray: 319 321;
+      stroke-dashoffset: 320;
+      animation: FAhwosdi_draw 109ms linear 526ms forwards;
+    }
+    .FAhwosdi_10 {
+      stroke-dasharray: 68 70;
+      stroke-dashoffset: 69;
+      animation: FAhwosdi_draw 23ms linear 636ms forwards;
+    }
+    .FAhwosdi_11 {
+      stroke-dasharray: 81 83;
+      stroke-dashoffset: 82;
+      animation: FAhwosdi_draw 28ms linear 659ms forwards;
+    }
+    .FAhwosdi_12 {
+      stroke-dasharray: 154 156;
+      stroke-dashoffset: 155;
+      animation: FAhwosdi_draw 53ms linear 688ms forwards;
+    }
+    .FAhwosdi_13 {
+      stroke-dasharray: 157 159;
+      stroke-dashoffset: 158;
+      animation: FAhwosdi_draw 54ms linear 741ms forwards;
+    }
+    .FAhwosdi_14 {
+      stroke-dasharray: 43 45;
+      stroke-dashoffset: 44;
+      animation: FAhwosdi_draw 15ms linear 795ms forwards;
+    }
+    .FAhwosdi_15 {
+      stroke-dasharray: 42 44;
+      stroke-dashoffset: 43;
+      animation: FAhwosdi_draw 14ms linear 810ms forwards;
+    }
+    .FAhwosdi_16 {
+      stroke-dasharray: 42 44;
+      stroke-dashoffset: 43;
+      animation: FAhwosdi_draw 14ms linear 824ms forwards;
+    }
+    .FAhwosdi_17 {
+      stroke-dasharray: 41 43;
+      stroke-dashoffset: 42;
+      animation: FAhwosdi_draw 14ms linear 839ms forwards;
+    }
+    .FAhwosdi_18 {
+      stroke-dasharray: 1045 1047;
+      stroke-dashoffset: 1046;
+      animation: FAhwosdi_draw 358ms linear 854ms forwards;
+    }
+    .FAhwosdi_19 {
+      stroke-dasharray: 384 386;
+      stroke-dashoffset: 385;
+      animation: FAhwosdi_draw 131ms linear 1212ms forwards;
+    }
+    .FAhwosdi_20 {
+      stroke-dasharray: 249 251;
+      stroke-dashoffset: 250;
+      animation: FAhwosdi_draw 85ms linear 1343ms forwards;
+    }
+    .FAhwosdi_21 {
+      stroke-dasharray: 674 676;
+      stroke-dashoffset: 675;
+      animation: FAhwosdi_draw 231ms linear 1429ms forwards;
+    }
+    .FAhwosdi_22 {
+      stroke-dasharray: 257 259;
+      stroke-dashoffset: 258;
+      animation: FAhwosdi_draw 88ms linear 1660ms forwards;
+    }
+    .FAhwosdi_23 {
+      stroke-dasharray: 42 44;
+      stroke-dashoffset: 43;
+      animation: FAhwosdi_draw 14ms linear 1748ms forwards;
+    }
+    .FAhwosdi_24 {
+      stroke-dasharray: 260 262;
+      stroke-dashoffset: 261;
+      animation: FAhwosdi_draw 89ms linear 1763ms forwards;
+    }
+    .FAhwosdi_25 {
+      stroke-dasharray: 261 263;
+      stroke-dashoffset: 262;
+      animation: FAhwosdi_draw 89ms linear 1852ms forwards;
+    }
+    .FAhwosdi_26 {
+      stroke-dasharray: 42 44;
+      stroke-dashoffset: 43;
+      animation: FAhwosdi_draw 14ms linear 1942ms forwards;
+    }
+    .FAhwosdi_27 {
+      stroke-dasharray: 42 44;
+      stroke-dashoffset: 43;
+      animation: FAhwosdi_draw 14ms linear 1957ms forwards;
+    }
+    .FAhwosdi_28 {
+      stroke-dasharray: 41 43;
+      stroke-dashoffset: 42;
+      animation: FAhwosdi_draw 14ms linear 1972ms forwards;
+    }
+    .FAhwosdi_29 {
+      stroke-dasharray: 41 43;
+      stroke-dashoffset: 42;
+      animation: FAhwosdi_draw 14ms linear 1986ms forwards;
+    }
+    .FAhwosdi_30 {
+      stroke-dasharray: 40 42;
+      stroke-dashoffset: 41;
+      animation: FAhwosdi_draw 14ms linear 2000ms forwards;
+    }
+    .FAhwosdi_31 {
+      stroke-dasharray: 40 42;
+      stroke-dashoffset: 41;
+      animation: FAhwosdi_draw 14ms linear 2014ms forwards;
+    }
+    .FAhwosdi_32 {
+      stroke-dasharray: 204 206;
+      stroke-dashoffset: 205;
+      animation: FAhwosdi_draw 70ms linear 2028ms forwards;
+    }
+    .FAhwosdi_33 {
+      stroke-dasharray: 575 577;
+      stroke-dashoffset: 576;
+      animation: FAhwosdi_draw 197ms linear 2099ms forwards;
+    }
+    .FAhwosdi_34 {
+      stroke-dasharray: 468 470;
+      stroke-dashoffset: 469;
+      animation: FAhwosdi_draw 160ms linear 2296ms forwards;
+    }
+    .FAhwosdi_35 {
+      stroke-dasharray: 213 215;
+      stroke-dashoffset: 214;
+      animation: FAhwosdi_draw 73ms linear 2456ms forwards;
+    }
+    .FAhwosdi_36 {
+      stroke-dasharray: 154 156;
+      stroke-dashoffset: 155;
+      animation: FAhwosdi_draw 53ms linear 2530ms forwards;
+    }
+    .FAhwosdi_37 {
+      stroke-dasharray: 152 154;
+      stroke-dashoffset: 153;
+      animation: FAhwosdi_draw 52ms linear 2583ms forwards;
+    }
+    .FAhwosdi_38 {
+      stroke-dasharray: 153 155;
+      stroke-dashoffset: 154;
+      animation: FAhwosdi_draw 52ms linear 2635ms forwards;
+    }
+    .FAhwosdi_39 {
+      stroke-dasharray: 153 155;
+      stroke-dashoffset: 154;
+      animation: FAhwosdi_draw 52ms linear 2688ms forwards;
+    }
+    .FAhwosdi_40 {
+      stroke-dasharray: 46 48;
+      stroke-dashoffset: 47;
+      animation: FAhwosdi_draw 16ms linear 2740ms forwards;
+    }
+    .FAhwosdi_41 {
+      stroke-dasharray: 52 54;
+      stroke-dashoffset: 53;
+      animation: FAhwosdi_draw 18ms linear 2756ms forwards;
+    }
+    .FAhwosdi_42 {
+      stroke-dasharray: 451 453;
+      stroke-dashoffset: 452;
+      animation: FAhwosdi_draw 154ms linear 2775ms forwards;
+    }
+    .FAhwosdi_43 {
+      stroke-dasharray: 204 206;
+      stroke-dashoffset: 205;
+      animation: FAhwosdi_draw 70ms linear 2929ms forwards;
+    }
+    @keyframes FAhwosdi_draw {
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+    @keyframes FAhwosdi_fade {
+      0% {
+        stroke-opacity: 1;
+      }
+      94.44444444444444% {
+        stroke-opacity: 1;
+      }
+      100% {
+        stroke-opacity: 0;
+      }
+    }
+  </style>
+</svg>

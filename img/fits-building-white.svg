@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="674px" height="881.9px" viewBox="0 0 674 881.9" style="enable-background:new 0 0 674 881.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#F8F8F9;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<title>Artboard 1</title>
+<g id="ladder">
+	<line class="st0" x1="347.9" y1="478.8" x2="424.2" y2="612.3"/>
+	<line class="st0" x1="310.5" y1="489.4" x2="385" y2="627.4"/>
+	<line class="st0" x1="409.9" y1="587" x2="369.7" y2="599.1"/>
+	<line class="st0" x1="389.8" y1="551.4" x2="349.7" y2="562.1"/>
+	<line class="st0" x1="372.4" y1="520.6" x2="332.3" y2="529.9"/>
+	<line class="st0" x1="356.9" y1="494.5" x2="317.4" y2="502.2"/>
+	<line class="st0" x1="342.2" y1="179.2" x2="265.7" y2="427"/>
+	<line class="st0" x1="378.8" y1="190.4" x2="305.6" y2="440.6"/>
+	<line class="st0" x1="277.3" y1="389.5" x2="317.9" y2="398.4"/>
+	<line class="st0" x1="288.7" y1="352.6" x2="329.1" y2="360"/>
+	<line class="st0" x1="300.1" y1="315.5" x2="340.3" y2="322"/>
+	<line class="st0" x1="311.1" y1="280" x2="350.6" y2="286.8"/>
+	<line class="st0" x1="323" y1="241.3" x2="362.5" y2="246.2"/>
+	<line class="st0" x1="334.3" y1="204.7" x2="373.2" y2="209.4"/>
+	<line class="st0" x1="380.6" y1="663.1" x2="304.2" y2="796.6"/>
+	<line class="st0" x1="418" y1="673.8" x2="343.5" y2="811.8"/>
+	<line class="st0" x1="318.5" y1="771.4" x2="358.8" y2="783.4"/>
+	<line class="st0" x1="338.7" y1="735.7" x2="378.8" y2="746.4"/>
+	<line class="st0" x1="356.1" y1="704.9" x2="396.1" y2="714.2"/>
+	<line class="st0" x1="371.6" y1="678.8" x2="411.1" y2="686.5"/>
+</g>
+<g id="bmf">
+	<line class="st0" x1="613.5" y1="142.4" x2="419.3" y2="82.8"/>
+	<polyline class="st0" points="474.2,616.6 613.5,571.2 613.5,142.4 	"/>
+	<polyline class="st0" points="419.3,82.8 221.8,142.3 222.7,403.6 	"/>
+	<line class="st0" x1="269.2" y1="128" x2="473.4" y2="186"/>
+	<line class="st0" x1="305.7" y1="138.4" x2="452.4" y2="93"/>
+	<line class="st0" x1="352.3" y1="151.6" x2="497.2" y2="106.9"/>
+	<line class="st0" x1="392.7" y1="163.1" x2="538.5" y2="119.6"/>
+	<line class="st0" x1="443.4" y1="177.5" x2="590.5" y2="135.7"/>
+	<line class="st0" x1="376.1" y1="116.6" x2="419.5" y2="130.9"/>
+	<line class="st0" x1="468" y1="140.6" x2="517.2" y2="156.5"/>
+	<polyline class="st0" points="221.8,142.3 419.3,202.8 419.3,446.8 	"/>
+	<line class="st0" x1="419.3" y1="202.8" x2="613.5" y2="142.3"/>
+</g>
+<g id="pmf">
+	<polyline class="st0" points="436.6,604.3 436.6,452.2 253.5,394.3 68.8,450.8 68.8,698.9 253.6,755.2 314.3,726.9 	"/>
+	<polyline class="st0" points="436.6,452.2 253.5,506.8 68.8,450.8 	"/>
+	<line class="st0" x1="253.5" y1="506.8" x2="253.5" y2="755.2"/>
+	<polygon class="st0" points="92.1,450.8 253.5,401.9 415.1,451.8 253.5,498.5 	"/>
+	<polyline class="st0" points="92.1,450.8 257.7,443.3 344.3,472.2 	"/>
+	<line class="st0" x1="257.7" y1="443.3" x2="253.5" y2="401.9"/>
+</g>
+<g id="psf">
+	<polygon class="st0" points="314.3,642.8 435.6,604.3 559,642.8 559,735.6 437.8,774.3 314.3,736.8 	"/>
+	<polyline class="st0" points="314.3,642.8 436.6,679.9 559,642.8 	"/>
+	<line class="st0" x1="436.6" y1="679.9" x2="436.6" y2="774.3"/>
+	<ellipse class="st0" cx="437.3" cy="642.5" rx="73.1" ry="20.9"/>
+	<polyline class="st0" points="386.8,627.4 430.2,642.2 424.1,662.6 	"/>
+	<line class="st0" x1="430.2" y1="642.2" x2="510.4" y2="642.5"/>
+</g>
+</svg>
