@@ -13,7 +13,7 @@
     display: inline-block;
     margin: 0;
     max-width: 100%;
-    background-color: #181A1E;
+    background-color: #121212;
     color: #fff;
     overflow: hidden;
     -webkit-backface-visibility: hidden;
@@ -43,7 +43,7 @@
 }
 
 [class^='imghvr-'] figcaption h1, [class^='imghvr-'] figcaption h2, [class^='imghvr-'] figcaption h3, [class^='imghvr-'] figcaption h4, [class^='imghvr-'] figcaption h5, [class^='imghvr-'] figcaption h6, [class*=' imghvr-'] figcaption h1, [class*=' imghvr-'] figcaption h2, [class*=' imghvr-'] figcaption h3, [class*=' imghvr-'] figcaption h4, [class*=' imghvr-'] figcaption h5, [class*=' imghvr-'] figcaption h6 {
-  
+
     color: #FFFFFF;
 }
 

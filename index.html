@@ -7,44 +7,54 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Elixeur | Synchronicity In-Sight</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/BootstrapXL.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/hover-min.css">
   <link rel="stylesheet" href="css/imagehover.css">
   <link rel="stylesheet" href="css/app.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" charset="utf-8"></script>
+  <script src="js/contact.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $("#showContact").click(function(e) {
+      e.preventDefault();
+      console.log("H");
+      //showContact();
+    });
+  </script>
 </head>
 
 <body>
 
+
+
   <div class="container-fluid">
-    <div class="row" id="root">
 
-
-
-      <div class="bordered-div"></div>
-
+    <div class="row">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 flex" id="hero">
             <h1 class="tagLine">
-              Any Business <br> Can Be Improved
-            </h1>
-            <p>But almost 90% businesses <em class="text-red">fail</em> to identify the <strong>method</strong> that ensures <strong>growth</strong>.</p>
+          Any Business <br> Can Be Improved
+        </h1>
+            <p> <span style="display: inline; border-top: 1px solid rgba(255,255,255,.15); padding-top: .7em;">But almost 90% businesses <em class="text-red">fail</em> to identify the <strong>method</strong> that ensures <strong>growth</strong>.</span></p>
           </div>
         </div>
       </div>
+    </div>
 
+
+    <div class="row">
       <div class="bordered-div"></div>
-
       <nav class="navbar navbar-default">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
             <a class="navbar-brand" href="#">Elixeur</a>
           </div>
 
@@ -62,15 +72,19 @@
         </div>
         <!-- /.container-fluid -->
       </nav>
+    </div>
 
+    <div class="row">
       <div class="container">
         <div class="row flex" id="intro">
           <img src="img/elixeur-logo-white.svg" alt="Elixeur Logo White" class="elx-logo-white">
-          <h3 class="aboutText">An independent agency using LEAN methodology
-dedicated to business GROWTH.</h3>
+          <h2 class="aboutText">An independent agency using LEAN methodology
+dedicated to business GROWTH.</h2>
         </div>
       </div>
+    </div>
 
+    <div class="row">
       <div class="bordered-div" id="method"></div>
 
       <div class="fits-sec-header">
@@ -85,21 +99,38 @@ dedicated to business GROWTH.</h3>
 
           </div>
           <div class="col-sm-6 fits-description flex">
-            <div class="psf flex hvr-sweep-to-right">
-              <h2>Problem Solution Fit</h2>
+            <div class="psf flex">
+              <figure class="front flex imghvr-push-down">
+                <h2>Problem Solution Fit</h2>
+                <figcaption class="back flex">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda possimus, quas, provident debitis excepturi alias tempore suscipit atque adipisci dolorum quam neque cum rerum, dolor tenetur, harum aliquid voluptates placeat.</p>
+                </figcaption>
+              </figure>
             </div>
-            <div class="pmf flex hvr-sweep-to-right">
-              <h2>Problem Solution Fit</h2>
+            <div class="pmf flex imghvr-push-left">
+              <figure class="front flex imghvr-push-down">
+                <h2>Product Market Fit</h2>
+                <figcaption class="back flex">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda possimus, quas, provident debitis excepturi alias tempore suscipit atque adipisci dolorum quam neque cum rerum, dolor tenetur, harum aliquid voluptates placeat.</p>
+                </figcaption>
+              </figure>
             </div>
-            <div class="bmf flex hvr-sweep-to-right">
-              <h2>Problem Solution Fit</h2>
+            <div class="bmf flex imghvr-slide-up">
+              <figure class="front flex imghvr-push-down">
+                <h2>Business Model Fit</h2>
+                <figcaption class="back flex">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda possimus, quas, provident debitis excepturi alias tempore suscipit atque adipisci dolorum quam neque cum rerum, dolor tenetur, harum aliquid voluptates placeat.</p>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
       </div>
 
       <div class="bordered-div" id="stages"></div>
+    </div>
 
+    <div class="row">
       <div class="fits-sec-header">
         <h2>The STAGES we go through with you, for you</h2>
       </div>
@@ -135,7 +166,9 @@ dedicated to business GROWTH.</h3>
           <p id="stg-des"></p>
         </div>
       </div>
+    </div>
 
+    <div class="row">
       <div class="bordered-div"></div>
 
       <div class="fits-sec-header">
@@ -214,45 +247,61 @@ dedicated to business GROWTH.</h3>
       </div>
 
       <div class="bordered-div"></div>
+    </div>
 
+    <div class="row">
 
       <div class="container">
         <div class="row flex" id="contact">
-
-
-
           <div class="col-xs-12">
             <div class="row">
-              <h2 class="cta">Want to check your business's health? Let's have a <span>free meeting.</span></h2>
-              <div class="col-xs-12">
-                <div class="row">
-                  <h2 class="social-media-title"><span>Social</span></h2>
-                </div>
-              </div>
-              <div class="col-xs-12 social-media">
-                <div class="row">
-                  <div class="col-xs-3">
-                    <a href="" class="hvr-sweep-to-right"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="" class="hvr-sweep-to-right"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="" class="hvr-sweep-to-right"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                  </div>
-                  <div class="col-xs-3">
-                    <a href="" class="hvr-sweep-to-right"><i class="fa fa-medium" aria-hidden="true"></i></a>
-                  </div>
-                </div>
-              </div>
+              <h2 class="cta">Want to check your business's health? Let's have a <span id="open-form">talk.</span></h2>
             </div>
           </div>
+
         </div>
       </div>
+    </div>
 
-      <div class="bordered-div"></div>
+
+<div class="flex" id="form-container">
+  <span class="close-btn"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+  <div class="col-sm-6 col-sm-offset-3">
+    <div class="row">
+
+      <form class="contact-form">
+
+  <div class="form-body">
+    <h1 class="form-title"><span>Contact Us</span></h1>
+    <div class="form-group">
+      <input type="text" class="form-control" id="name" placeholder="Your Name...">
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" id="email" placeholder="Your Email...">
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" rows="5" id="message" placeholder="Your Message..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-default">SEND</button>
+     <h3 class="bordered-title"><span>Find us on social media</span></h3>
+
+    <ul class="social">
+    <li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+    <li><a href="" class="c-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    <li><a href="" class="c-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+    <li><a href="" class="c-medium"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+      <li><a href="" class="c-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+
+  </div>
+
+</form>
+    </div>
+  </div>
+</div>
 
 
+    <div class="row">
       <div class="map-container">
         <div id="map">
 
@@ -260,17 +309,27 @@ dedicated to business GROWTH.</h3>
         <div class="copyright">
           <img src="img/elx-tag.svg" alt="" class="tag">
           <img src="img/crafted-seal-of-elixeur.svg" alt="" class="seal">
+
+          <ul class="social-link">
+            <li><a href="https://fb.com/elixeur" class="fbook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="" class="medium"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+            <li><a href="" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+
         </div>
       </div>
 
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" charset="utf-8"></script>
+
 
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmnTbHVhDMR0s8bvqFu8k4cR7FeBbttNk"></script>
   <script src="js/map.js" charset="utf-8"></script>
+
   <script src="js/app.js" charset="utf-8"></script>
 
 </body>
