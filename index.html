@@ -9,23 +9,60 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/BootstrapXL.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/hover-min.css">
   <link rel="stylesheet" href="css/imagehover.css">
   <link rel="stylesheet" href="css/app.css">
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" charset="utf-8"></script>
-  <script src="js/contact.js" charset="utf-8"></script>
-  <script type="text/javascript">
-    $("#showContact").click(function(e) {
-      e.preventDefault();
-      console.log("H");
-      //showContact();
-    });
-  </script>
 </head>
 
-<body>
+<body id="content">
+
+  <section class="contact trans-contact">
+        <div class="contact-text">
+            <div class="close">
+                <a href="javascript:Contact.showContact();">
+                    <img src="img/close-btn.svg" alt="close" class="svg-raw"/>
+                </a>
+            </div>
+
+            <h2>Ready to<br/> <span class="red-hit">get started?</span></h2>
+            <div id="contact-content">
+                Give us a call at (+880) 197-ELIXEUR or fill out the form below and we’ll get back to you within two
+                business days.
+                <div class="contact-form">
+                    <div id="contact-form-error"></div>
+                    <form action="#" method="post" onsubmit="return Contact.checkForm('.contact-form');"
+                          id="form-contact">
+                        <p>
+                            <input name="name" id="form-name" value="YOUR NAME *" class="formstxt req"
+                                   onclick="if(this.value==this.defaultValue)this.value='';"
+                                   onblur="if(this.value=='')this.value=this.defaultValue;" type="text">
+                        </p>
+                        <p>
+                            <input name="business" id="form-business" value="BUSINESS NAME *" class="formstxt req"
+                                   onclick="if(this.value==this.defaultValue)this.value='';"
+                                   onblur="if(this.value=='')this.value=this.defaultValue;" type="text">
+                        </p>
+                        <p>
+                            <input name="email" id="form-email" value="EMAIL ADDRESS *" class="formstxt req"
+                                   onclick="if(this.value==this.defaultValue)this.value='';"
+                                   onblur="if(this.value=='')this.value=this.defaultValue;" type="text">
+                        </p>
+                        <p>
+                            <input name="phone" id="form-phone" value="PHONE *" class="formstxt req"
+                                   onclick="if(this.value==this.defaultValue)this.value='';"
+                                   onblur="if(this.value=='')this.value=this.defaultValue;" type="text">
+                        </p>
+                        <p><textarea rows="5" name="message" id="form-message" cols="50" class="formstxt req"
+                                     onclick="if(this.value==this.defaultValue)this.value='';"
+                                     onblur="if(this.value=='')this.value=this.defaultValue;">HOW CAN WE HELP? *</textarea>
+                        </p>
+                        <p><input value="Let's GrOw" class="formsbtn" type="submit"></p>
+                    </form>
 
 
+                </div>
+            </div>
+        </div>
+    </section>
 
   <div class="container-fluid">
 
@@ -36,279 +73,329 @@
             <h1 class="tagLine">
           Any Business <br> Can Be Improved
         </h1>
-            <p> <span style="display: inline; border-top: 1px solid rgba(255,255,255,.15); padding-top: .7em;">But almost 90% businesses <em class="text-red">fail</em> to identify the <strong>method</strong> that ensures <strong>growth</strong>.</span></p>
+        <hr>
+            <p> <span style="padding-top: .7em;">But almost 90% businesses <em class="text-red">fail</em> to identify the <strong>method</strong> that ensures <strong>growth</strong>.</span></p>
           </div>
         </div>
       </div>
+      <div class="scroll-down svg" id="home-scroll-down">
+    <a href="#intro">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 25.166666 37.8704414" enable-background="new 0 0 25.166666 37.8704414" xml:space="preserve">
+          <path class="stroke" fill="none" stroke="#FFF" stroke-width="2.5" stroke-miterlimit="10" d="M12.5833445 36.6204414h-0.0000229C6.3499947 36.6204414 1.25 31.5204487 1.25 25.2871208V12.5833216C1.25 6.3499947 6.3499951 1.25 12.5833216 1.25h0.0000229c6.2333269 0 11.3333216 5.0999947 11.3333216 11.3333216v12.7037992C23.916666 31.5204487 18.8166714 36.6204414 12.5833445 36.6204414z"></path>
+          <path class="scroller" fill="#FFF" d="M13.0833359 19.2157116h-0.9192753c-1.0999985 0-1.9999971-0.8999996-1.9999971-1.9999981v-5.428606c0-1.0999994 0.8999987-1.9999981 1.9999971-1.9999981h0.9192753c1.0999985 0 1.9999981 0.8999987 1.9999981 1.9999981v5.428606C15.083334 18.315712 14.1833344 19.2157116 13.0833359 19.2157116z"></path>
+      </svg>
+    </a>
+</div>
     </div>
 
+</div>
 
-    <div class="row">
-      <div class="bordered-div"></div>
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<nav class="navbar navbar-default" data-spy="affix">
+  <div class="container">
+  <div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
     <span class="sr-only">Toggle navigation</span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
   </button>
-            <a class="navbar-brand" href="#">Elixeur</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#method">Method</a></li>
-              <li><a href="#stages">Stages</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-      </nav>
-    </div>
-
-    <div class="row">
-      <div class="container">
-        <div class="row flex" id="intro">
-          <img src="img/elixeur-logo-white.svg" alt="Elixeur Logo White" class="elx-logo-white">
-          <h2 class="aboutText">An independent agency using LEAN methodology
-dedicated to business GROWTH.</h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="bordered-div" id="method"></div>
-
-      <div class="fits-sec-header">
-        <h2>The METHOD that ensures growth for any business to be FIT</h2>
-      </div>
-      <div class="bordered-div"></div>
-
-      <div class="container">
-        <div class="row" id="fits">
-          <div class="col-sm-6 fits-building flex">
-            <img src="img/animated.svg" alt="" class="img-responsive">
-
-          </div>
-          <div class="col-sm-6 fits-description flex">
-            <div class="psf flex">
-              <figure class="front flex imghvr-push-down">
-                <h2>Problem Solution Fit</h2>
-                <figcaption class="back flex">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda possimus, quas, provident debitis excepturi alias tempore suscipit atque adipisci dolorum quam neque cum rerum, dolor tenetur, harum aliquid voluptates placeat.</p>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="pmf flex imghvr-push-left">
-              <figure class="front flex imghvr-push-down">
-                <h2>Product Market Fit</h2>
-                <figcaption class="back flex">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda possimus, quas, provident debitis excepturi alias tempore suscipit atque adipisci dolorum quam neque cum rerum, dolor tenetur, harum aliquid voluptates placeat.</p>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="bmf flex imghvr-slide-up">
-              <figure class="front flex imghvr-push-down">
-                <h2>Business Model Fit</h2>
-                <figcaption class="back flex">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda possimus, quas, provident debitis excepturi alias tempore suscipit atque adipisci dolorum quam neque cum rerum, dolor tenetur, harum aliquid voluptates placeat.</p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bordered-div" id="stages"></div>
-    </div>
-
-    <div class="row">
-      <div class="fits-sec-header">
-        <h2>The STAGES we go through with you, for you</h2>
-      </div>
-      <div class="bordered-div"></div>
-      <div class="container">
-        <div class="row" id="stages-s">
-          <div class="col-sm-6 stages-grp flex">
-            <div class="row search">
-              <div class="col-sm-6 flex customer-discovery">
-                <img src="img/customer-discovery.svg" alt="" class="img-responsive">
-                <P>Customer Discovery</P>
-              </div>
-              <div class="col-sm-6 flex customer-validation">
-                <img src="img/customer-validation.svg" alt="" class="img-responsive">
-                <P>Customer Validation</P>
-              </div>
-              <h3><span>Search</span></h3>
-            </div>
-          </div>
-          <div class="col-sm-6 stages-grp flex">
-            <div class="row search">
-              <div class="col-sm-6 flex customer-creation">
-                <img src="img/customer-creation.svg" alt="" class="img-responsive">
-                <P>Customer Creation</P>
-              </div>
-              <div class="col-sm-6 flex company-building">
-                <img src="img/company-building.svg" alt="" class="img-responsive">
-                <P>Company Building </P>
-              </div>
-              <h3><span>Execute</span></h3>
-            </div>
-          </div>
-          <p id="stg-des"></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="bordered-div"></div>
-
-      <div class="fits-sec-header">
-        <h2>F. A. Q</h2>
-      </div>
-      <div class="bordered-div"></div>
-
-      <div class="container">
-        <div class="row" id="faq">
-
-          <div class="col-sm-6 qsn-container">
-            <div class="flipper">
-              <figure class="qsn-front border-bottom imghvr-push-down flex">
-                <h2>Is your method applicable in Bangladesh?</h2>
-                <figcaption class="qsn-back flex">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <div class="col-sm-6 qsn-container">
-            <div class="flipper">
-              <figure class="qsn-front border-bottom qsn-front-e imghvr-push-down flex">
-                <h2>Is your method applicable in Bangladesh?</h2>
-                <figcaption class="qsn-back flex">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-          <div class="col-sm-6 qsn-container">
-            <div class="flipper">
-              <figure class="qsn-front border-bottom imghvr-push-down flex">
-                <h2>Is your method applicable in Bangladesh?</h2>
-                <figcaption class="qsn-back flex">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <div class="col-sm-6 qsn-container">
-            <div class="flipper">
-              <figure class="qsn-front border-bottom qsn-front-e imghvr-push-down flex">
-                <h2>Is your method applicable in Bangladesh?</h2>
-                <figcaption class="qsn-back flex">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-          <div class="col-sm-6 qsn-container">
-            <div class="flipper">
-              <figure class="qsn-front imghvr-push-down flex">
-                <h2>Is your method applicable in Bangladesh?</h2>
-                <figcaption class="qsn-back flex">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <div class="col-sm-6 qsn-container">
-            <div class="flipper">
-              <figure class="qsn-front qsn-front-e imghvr-push-down flex">
-                <h2>Is your method applicable in Bangladesh?</h2>
-                <figcaption class="qsn-back flex">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="bordered-div"></div>
-    </div>
-
-    <div class="row">
-
-      <div class="container">
-        <div class="row flex" id="contact">
-          <div class="col-xs-12">
-            <div class="row">
-              <h2 class="cta">Want to check your business's health? Let's have a <span id="open-form">talk.</span></h2>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
-<div class="flex" id="form-container">
-  <span class="close-btn"><i class="fa fa-window-close" aria-hidden="true"></i></span>
-  <div class="col-sm-6 col-sm-offset-3">
-    <div class="row">
-
-      <form class="contact-form">
-
-  <div class="form-body">
-    <h1 class="form-title"><span>Contact Us</span></h1>
-    <div class="form-group">
-      <input type="text" class="form-control" id="name" placeholder="Your Name...">
-    </div>
-    <div class="form-group">
-      <input type="email" class="form-control" id="email" placeholder="Your Email...">
-    </div>
-    <div class="form-group">
-      <textarea class="form-control" rows="5" id="message" placeholder="Your Message..."></textarea>
-    </div>
-    <button type="submit" class="btn btn-default">SEND</button>
-     <h3 class="bordered-title"><span>Find us on social media</span></h3>
-
-    <ul class="social">
-    <li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-    <li><a href="" class="c-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-    <li><a href="" class="c-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-    <li><a href="" class="c-medium"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
-      <li><a href="" class="c-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-    </ul>
-
+  <a class="navbar-brand" href="#">
+    <img src="img/elixeur-logo-white.svg" alt="" class="img-responsive">
+  </a>
+</div>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav navbar-right">
+    <li><a href="#method">Method</a></li>
+    <li><a href="#stages">Stages</a></li>
+    <li><a href="#faq">F.A.Q</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
   </div>
+</nav>
 
-</form>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container">
+          <div class="row flex" id="intro">
+            <img src="img/elixeur-logo-white.svg" alt="Elixeur Logo White" class="img-responsive elx-logo-white">
+            <h2 class="aboutText">An independent agency using LEAN methodology
+  dedicated to business GROWTH.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="bordered-div" id="method"></div>
+
+        <div class="sec-header">
+          <h2>The METHOD that ensures growth for any business to be FIT</h2>
+        </div>
+        <div class="bordered-div"></div>
+
+        <div class="container">
+          <div class="row" id="fits">
+            <div class="col-sm-6 fits-building flex">
+              <!--animated svg-->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="674px" height="881.9px" viewBox="0 0 674 881.9" style="enable-background:new 0 0 674 881.9;" xml:space="preserve">
+              <style type="text/css">
+              	.st0{fill:none;stroke:#F8F8F9;stroke-width:4.47;stroke-miterlimit:10;}
+              	.st1{fill:none;stroke:#F8F8F9;stroke-width:4.6556;stroke-miterlimit:10;}
+              	.st2{fill:none;stroke:#F8F8F9;stroke-width:3.4152;stroke-miterlimit:10;}
+              </style>
+              <title>Artboard 1</title>
+              <g id="bmf">
+              	<polygon class="st0" points="213.4,414.8 211.8,153.7 409.1,94.2 603.2,153.8 603.2,582.4 464.6,627.7 425.4,615.5 426.5,463.5
+              		243.5,405.6 	"/>
+              	<path class="st0" d="M259.1,139.4l204.1,57.9"/>
+              	<path class="st0" d="M295.6,149.8l146.7-45.3"/>
+              	<path class="st0" d="M342.2,163L487,118.3"/>
+              	<path class="st0" d="M382.5,174.5l145.8-43.4"/>
+              	<path class="st0" d="M433.3,188.9l146.9-41.8"/>
+              	<path class="st0" d="M366,128l43.4,14.3"/>
+              	<path class="st0" d="M457.8,152.1L507,168"/>
+              	<path class="st0" d="M211.8,153.7l197.3,60.5V458"/>
+              	<path class="st0" d="M409.1,214.2l194.1-60.5"/>
+              </g>
+              <g id="ladder3">
+              	<path class="st0" d="M351.6,193.1L233.1,423.5"/>
+              	<path class="st0" d="M387.7,206.5L271.9,439.9"/>
+              	<path class="st0" d="M253.1,384.6l38.4,15.9"/>
+              	<path class="st0" d="M270.7,350.4l38.5,14.3"/>
+              	<path class="st0" d="M288.5,315.9l38.3,13.4"/>
+              	<path class="st0" d="M305.4,282.8l37.6,13.6"/>
+              	<path class="st0" d="M324,246.8l37.9,11.7"/>
+              	<path class="st0" d="M341.5,212.8l37.4,11.5"/>
+              </g>
+              <g id="pmf">
+              	<path class="st0" d="M304.2,737.8v-83.9l122.3-38.5V463.5l-183-57.9L58.9,462v247.9l184.7,56.2L304.2,737.8"/>
+              	<path class="st0" d="M426.5,463.5l-183,54.5L58.9,462"/>
+              	<path class="st0" d="M243.5,518v248.2"/>
+              	<path class="st0" d="M82.2,462l161.2-48.8L405,463l-161.6,46.7L82.2,462z"/>
+              	<path class="st0" d="M82.2,462l165.4-7.5l86.6,28.9"/>
+              	<path class="st0" d="M247.7,454.5l-4.2-41.3"/>
+              </g>
+              <g id="ladder2">
+              	<path class="st1" d="M325.4,490l92.2,130.8"/>
+              	<path class="st1" d="M287.7,504.7l90.7,135.7"/>
+              	<path class="st1" d="M400.3,596l-40.6,16.4"/>
+              	<path class="st1" d="M376,561.1l-40.5,15"/>
+              	<path class="st1" d="M354.9,530.8l-40.7,13.6"/>
+              	<path class="st1" d="M336.3,505.4l-40.2,11.9"/>
+              </g>
+              <g id="psf">
+              	<path class="st0" d="M304.2,653.9l121.2-38.4l123.3,38.4v92.8l-121.1,38.7l-123.4-37.5V653.9z"/>
+              	<path class="st0" d="M304.2,653.9L426.4,691l122.3-37.1"/>
+              	<path class="st0" d="M426.4,690.9v94.4"/>
+              	<path class="st0" d="M354,653.5c0-11.5,32.7-20.9,73.1-20.9s73.1,9.4,73.1,20.9s-32.7,20.9-73.1,20.9S354,665.1,354,653.5"/>
+              	<path class="st0" d="M376.7,638.4l43.3,14.9l-6.1,20.4"/>
+              	<path class="st0" d="M420,653.3l80.2,0.3"/>
+              </g>
+              <g id="ladder1">
+              	<path class="st2" d="M366.4,671.4l-67.9,95.8"/>
+              	<path class="st2" d="M393.9,682.2l-66.8,99.4"/>
+              	<path class="st2" d="M311.2,749l29.8,12.1"/>
+              	<path class="st2" d="M329.1,723.4l29.7,11.1"/>
+              	<path class="st2" d="M344.6,701.3l29.8,10"/>
+              	<path class="st2" d="M358.4,682.6l29.5,8.8"/>
+              </g>
+              </svg>
+
+              <!-- finished -->
+            </div>
+            <div class="col-sm-6 fits-description flex">
+              <div class="psf flex">
+                <fig ure class="front flex imghvr-push-down">
+                  <img src="img/psf-logo.svg" alt="" class="img-responsive">
+                  <figcaption class="back flex">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda possimus, quas, provident debitis excepturi alias tempore suscipit atque adipisci dolorum quam neque cum rerum, dolor tenetur, harum aliquid voluptates placeat.</p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="pmf flex imghvr-push-left">
+                <figure class="front flex imghvr-push-down">
+                  <img src="img/pmf-logo.svg" alt="" class="img-responsive">
+                  <figcaption class="back flex">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda possimus, quas, provident debitis excepturi alias tempore suscipit atque adipisci dolorum quam neque cum rerum, dolor tenetur, harum aliquid voluptates placeat.</p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="bmf flex imghvr-slide-up">
+                <figure class="front flex imghvr-push-down">
+                  <img src="img/bmf-logo.svg" alt="" class="img-responsive">
+                  <figcaption class="back flex">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda possimus, quas, provident debitis excepturi alias tempore suscipit atque adipisci dolorum quam neque cum rerum, dolor tenetur, harum aliquid voluptates placeat.</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bordered-div" id="stages"></div>
+      </div>
+    </div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="sec-header">
+      <h2>The STAGES we go through with you, for you</h2>
+    </div>
+    <div class="bordered-div"></div>
+    <div class="container">
+      <div class="row" id="stages-s">
+        <div class="col-sm-3 search cd">
+          <img src="img/customer-discovery.svg" alt="" class="img-responsive">
+          <h3>Customer Discovery</h3>
+          <hr class="visible-xs">
+          <p class="visible-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In architecto non praesentium velit pariatur deserunt nulla, commodi amet, cum, quaerat itaque, obcaecati fuga vero soluta quam! Distinctio numquam est dignissimos?</p>
+        </div>
+        <div class="col-sm-3 search cv">
+          <img src="img/customer-validation.svg" alt="" class="img-responsive">
+          <h3>Customer Validation</h3>
+          <hr class="visible-xs">
+          <p class="visible-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In architecto non praesentium velit pariatur deserunt nulla, commodi amet, cum, quaerat itaque, obcaecati fuga vero soluta quam! Distinctio numquam est dignissimos?</p>
+        </div>
+        <div class="col-sm-3 execute cc">
+          <img src="img/customer-creation.svg" alt="" class="img-responsive">
+          <h3>Customer Creation</h3>
+          <hr class="visible-xs">
+          <p class="visible-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In architecto non praesentium velit pariatur deserunt nulla, commodi amet, cum, quaerat itaque, obcaecati fuga vero soluta quam! Distinctio numquam est dignissimos?</p>
+        </div>
+        <div class="col-sm-3 execute cb">
+          <img src="img/company-building.svg" alt="" class="img-responsive">
+          <h3>Company Building </h3>
+          <hr class="visible-xs">
+          <p class="visible-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In architecto non praesentium velit pariatur deserunt nulla, commodi amet, cum, quaerat itaque, obcaecati fuga vero soluta quam! Distinctio numquam est dignissimos?</p>
+        </div>
+      </div>
+      <div class="row hidden-xs">
+        <div class="col-sm-6"><h3 class="ser"><span>Search</span></h3></div>
+        <div class="col-sm-6"><h3 class="exc"><span>Execute</span></h3></div>
+      </div>
+      <div class="row hidden-xs">
+        <div class="col-xs-12"><p id="stg-des"></p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row" id="faq">
+    <div class="bordered-div"></div>
+    <div class="sec-header" data-toggle="collapse" data-target="#faq-sec" id="faq-header">
+      <h2>F. A. Q</h2>
+    </div>
+    <div class="bordered-div"></div>
+
+    <div class="container">
+      <div class="row collapse" id="faq-sec">
+
+        <div class="col-sm-6 qsn-container">
+          <div class="flipper">
+            <figure class="qsn-front border-bottom imghvr-push-down flex">
+              <h2>Is your method applicable in Bangladesh?</h2>
+              <figcaption class="qsn-back flex">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="col-sm-6 qsn-container">
+          <div class="flipper">
+            <figure class="qsn-front border-bottom qsn-front-e imghvr-push-down flex">
+              <h2>Is your method applicable in Bangladesh?</h2>
+              <figcaption class="qsn-back flex">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-sm-6 qsn-container">
+          <div class="flipper">
+            <figure class="qsn-front border-bottom imghvr-push-down flex">
+              <h2>Is your method applicable in Bangladesh?</h2>
+              <figcaption class="qsn-back flex">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="col-sm-6 qsn-container">
+          <div class="flipper">
+            <figure class="qsn-front border-bottom qsn-front-e imghvr-push-down flex">
+              <h2>Is your method applicable in Bangladesh?</h2>
+              <figcaption class="qsn-back flex">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-sm-6 qsn-container">
+          <div class="flipper">
+            <figure class="qsn-front border-bottom imghvr-push-down flex">
+              <h2>Is your method applicable in Bangladesh?</h2>
+              <figcaption class="qsn-back flex">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="col-sm-6 qsn-container">
+          <div class="flipper">
+            <figure class="qsn-front border-bottom qsn-front-e imghvr-push-down flex">
+              <h2>Is your method applicable in Bangladesh?</h2>
+              <figcaption class="qsn-back flex">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti qui distinctio reprehenderit, quisquam illo nihil eos cum optio inventore eveniet nam in facere quibusdam non consequatur accusantium. Culpa, reiciendis, pariatur.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="container">
+      <div class="row flex" id="contact">
+        <div class="col-xs-12">
+          <div class="row">
+            <h2 class="cta"><a href="javascript:Contact.showContact();">Want to check your business's health? Let's have a talk. </a></h2>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>
 
 
+
+<div class="container-fluid">
     <div class="row">
       <div class="map-container">
-        <div id="map">
-
+        <div id="map" class="flex">
         </div>
         <div class="copyright">
-          <img src="img/elx-tag.svg" alt="" class="tag">
-          <img src="img/crafted-seal-of-elixeur.svg" alt="" class="seal">
+
+          <div class="address">
+            <p>18/1, Naya Paltan,</p>
+            <p>Dhaka - 1000</p>
+          </div>
+
+          <img src="img/elx-tag.svg" alt="" class="img-responsive tag">
+          <img src="img/crafted-seal-of-elixeur.svg" alt="" class="img-responsive seal">
 
           <ul class="social-link">
             <li><a href="https://fb.com/elixeur" class="fbook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -325,12 +412,14 @@ dedicated to business GROWTH.</h2>
   </div>
 
 
-
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" charset="utf-8"></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmnTbHVhDMR0s8bvqFu8k4cR7FeBbttNk"></script>
   <script src="js/map.js" charset="utf-8"></script>
-
+  <script src="js/contact.js" charset="utf-8"></script>
   <script src="js/app.js" charset="utf-8"></script>
+
+
 
 </body>
 

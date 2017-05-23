@@ -1,0 +1,221 @@
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 300;
+    color: #000;
+    line-height: 36px;
+    font-size: 23px;
+    overflow-x: hidden;
+}
+
+
+
+.trans-contact {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+#content {
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+}
+
+.contact-open {
+    margin-left: -600px;
+}
+
+@media (max-width: 767px) {
+    .contact-open {
+        margin-left: -300px;
+    }
+}
+
+.contact-open .contact {
+    right: 0;
+}
+
+.contact-open .contact .contact-text {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transition: transform 0.4s;
+    -moz-transition: transform 0.4s;
+    -ms-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.contact {
+    position: fixed;
+    width: 600px;
+    right: -600px;
+    top: 0;
+    height: 100%;
+    z-index: 200;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    background-color: #000;
+}
+
+@media (max-width: 767px) {
+    .contact {
+        background: #000000;
+        border-left: 2px solid #202020;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact {
+        width: 100%;
+        right: -100%;
+    }
+}
+
+.contact .contact-text {
+    -webkit-transition: transform 0.4s;
+    -moz-transition: transform 0.4s;
+    -ms-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 100px 50px;
+    transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+}
+
+.contact .contact-form {
+    margin-top: 30px;
+    padding-bottom: 80px;
+}
+
+.contact .contact-form #contact-form-error {
+    color: #ffffff;
+}
+
+.contact .formstxt {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    outline: none;
+    padding: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    color: #707070;
+    border: 1px solid #313131;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .errortxt {
+    border: 1px solid #555555;
+}
+
+.contact .formstxt:focus {
+    background: #fff;
+    border: 1px solid #383838;
+}
+
+.contact .formsbtn {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    outline: none;
+    padding: 20px 50px;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Arimo', sans-serif;
+    background: #ff473a;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .contact .formsbtn {
+        padding: 20px 0;
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+.contact .formsbtn:hover {
+    background: #fff;
+    transition: all .5s;
+    color: #000;
+}
+
+.contact .close {
+    width: 20px;
+    position: absolute;
+    right: 31px;
+    top: 34px;
+}
+
+@media (max-width: 767px) {
+    .contact .close {
+        right: 21px;
+        top: 25px;
+    }
+}
+
+.contact .close svg {
+    width: 20px;
+}
+
+.contact .close svg:hover path {
+    fill: #e1382d;
+}
+
+.contact h2 {
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .contact h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+/*
+
+------------------------------------------------------------
+
+3 TYPES OF FIT EXAMPLE
+
+*/
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
